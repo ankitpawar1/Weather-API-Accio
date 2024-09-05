@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Landing Section -->
+    <div class="landing-section" id="landing">
+      <h1>Weather API</h1>
+      <button id="fetchDataBtn">Fetch Data</button>
+    </div>
+
+    <!-- Weather Data Section -->
+    <div class="weather-section hidden" id="weatherSection">
+      <h2>Welcome To The Weather App</h2>
+      <p>Here is your current location</p>
+
+      <div class="location-data">
+        <div class="location-info">
+          <span id="lat">Lat: -</span>
+          <span id="lon">Long: -</span>
+        </div>
+        <div class="map-container">
+          <iframe id="map" src="" width="100%" height="300px" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+
+      <div class="weather-data">
+        <h3>Your Weather Data</h3>
+        <div class="weather-info">
+          <div class="weather-box" id="location">Location: -</div>
+          <div class="weather-box" id="windSpeed">Wind Speed: -</div>
+          <div class="weather-box" id="humidity">Humidity: -</div>
+          <div class="weather-box" id="timezone">Time Zone: -</div>
+          <div class="weather-box" id="pressure">Pressure: -</div>
+          <div class="weather-box" id="windDirection">Wind Direction: -</div>
+          <div class="weather-box" id="uvIndex">UV Index: -</div>
+          <div class="weather-box" id="feelsLike">Feels like: -</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
